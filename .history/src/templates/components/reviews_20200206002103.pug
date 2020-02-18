@@ -1,0 +1,16 @@
+script(type="text/x-template")#reviews-list
+  .reviews
+    .reviews__header
+      .reviews__title.section-title Что обо мне говорят
+      .reviews__buttons
+        .reviews__btn.reviews__btn_prev
+        .reviews__btn
+    .reviews__content
+      ul.reviews__content-wrapper
+        li.reviews__content-item(v-for="review in reviews" :key="review.id")
+          .review__text {{review.text}}
+          img(:src="review.pic" alt="").review__image
+          .review__info
+            .review__author {{review.author}}
+            .review__desc {{review.desc}}
+          

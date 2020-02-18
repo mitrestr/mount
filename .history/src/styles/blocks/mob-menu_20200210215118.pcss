@@ -1,0 +1,38 @@
+.mob-menu {
+  display: none;
+  @include tablets {
+    display: block;
+  }
+}
+.mob-menu input {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  z-index: 2;
+}
+input:checked ~ .mob-menu__toogle {
+  display: none;
+}
+.mob-menu__close {
+  z-index: 1;
+}
+input:not(:checked) ~ .mob-menu__close {
+  display: none;
+}
+input:not(:checked) ~ .mob-menu__list {
+  display: none;
+}
+.mob-menu__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  background: white;
+  display: none;
+  @include tablets {
+    display: block;
+  }
+}

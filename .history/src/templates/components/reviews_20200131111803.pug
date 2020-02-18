@@ -1,0 +1,7 @@
+script(type="text/x-template")#skills-list
+  .values__widget-container
+    ul.skills
+      li.skills__item(v-for="skill in skills" :key="skill.skillsGroup")
+        skills-row(
+          :skill="skill"
+        )

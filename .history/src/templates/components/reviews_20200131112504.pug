@@ -1,0 +1,11 @@
+script(type="text/x-template")#reviews-list
+  ul.reviews
+    li.reviews__item(v-for="review in reviews" :key="review.id")
+      review(
+        :review="review"
+      )
+
+script(type="text/x-template")#review
+  .review
+    img.review__img[src=]
+    .review__circle-text {{skillName}}

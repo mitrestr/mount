@@ -1,0 +1,9 @@
+script(type="text/x-template")#reviews-list
+  ul.reviews
+    li.reviews__item(v-for="review in reviews" :key="review.id")
+      .review
+        .review__text {{review.text}}
+        img(:src="review.pic" alt="").review__image
+        div
+          .review__author {{review.author}}
+          .review__desc {{review.desc}}

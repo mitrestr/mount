@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  width: 55%;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.header__buttons {
+  @include phones {
+    display: none;
+  }
+}
+button.open{
+      --stripeHeight: 4Px;
+      position: relative;
+      width: 22PX;
+      height: 22PX;
+      border-top: var(--stripeHeight) solid;
+      border-bottom: var(--stripeHeight) solid;
+      color: inherit
+    }
+        button.open:focus {
+      outline: none
+    }
+    
+    button.open:after,
+    button.open:before {
+      content: "";
+      height: var(--stripeHeight);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: currentColor;
+      transition: transform .3s
+    }
+    
+    button.open:after {
+      background: currentColor;
+      opacity: 0;
+      transition: opacity .3s
+    }
+    
+    button.close {
+      border-color: transparent
+    }
+    
+    button.close:before {
+      transform: translateY(-50%) rotate(-45deg);
+      border-radius: 5px
+    }
+    
+    button.close:after {
+      opacity: 1;
+      transform: translateY(-50%) rotate(45deg);
+      border-radius: 5px
+    }

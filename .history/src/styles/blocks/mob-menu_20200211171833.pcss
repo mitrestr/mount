@@ -1,0 +1,63 @@
+.mob-menu {
+  display: none;
+  @include tablets {
+    display: block;
+  }
+}
+.mob-menu input {
+  position: absolute;
+  display: block;
+  margin-top: -7px;
+  margin-left: -5px;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  z-index: 2;
+}
+input:checked ~ .mob-menu__toogle {
+  display: none;
+}
+.mob-menu__close {
+  z-index: 1;
+  position: relative;
+}
+input:not(:checked) ~ .mob-menu__close {
+  display: none;
+}
+input:not(:checked) ~ .mob-menu__list {
+  display: none;
+}
+.mob-menu__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  background: white;
+  display: none;
+  @include tablets {
+    display: block;
+  }
+}
+.mob-menu__item{
+  position:relative;
+  top:200px;
+  left:50px;
+  margin-bottom:30px;
+}
+.mob-menu__link{
+  text-decoration: none;
+}
+.mob-menu__socials{
+  position: absolute;
+  top: 500px;
+  right:276px;
+
+  display:flex;
+  background: white;
+}
+.mob-menu__block{
+  height:100%;
+  width: 100%;
+  position: relative;
+}

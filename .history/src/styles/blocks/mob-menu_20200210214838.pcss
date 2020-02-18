@@ -1,0 +1,19 @@
+.mob-menu {
+  display: none;
+  @include tablets {
+    display: block;
+  }
+}
+.mob-menu input {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+}
+input:checked ~ .mob-menu__toogle {
+  display: none;
+}
+input:not(:checked) ~ .mob-menu__close {
+  display: none;
+}
