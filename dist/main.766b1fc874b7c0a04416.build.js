@@ -4374,13 +4374,13 @@
 }, function(e, t, n) {}, function(e) {
     e.exports = JSON.parse('[{"skillsGroup":"Frontend","skills":{"html5":25,"css3":13,"JavaScript":75,"Jquery и Vue.js":25}},{"skillsGroup":"Backend","skills":{"Git":13,"Terminal":25,"Gulp":50,"Webpack":40}}]')
 }, function(e, t, n) {
-    e.exports = n.p + "../dist/1767cd6b950d0b92a4d7ad85438bdbb8.jpg"
+    e.exports = "../dist/1767cd6b950d0b92a4d7ad85438bdbb8.jpg"
 }, function(e, t, n) {
-    e.exports = n.p + "../dist/42565f0749b645c2bc343aa6a5d55340.jpg"
+    e.exports =  "../dist/42565f0749b645c2bc343aa6a5d55340.jpg"
 }, function(e, t, n) {
-    e.exports = n.p + "../dist/58015bdcbda14318644bfea176883c35.jpg"
+    e.exports =  "../dist/58015bdcbda14318644bfea176883c35.jpg"
 }, function(e, t, n) {
-    e.exports = n.p + "../dist/f11a05dd8ebf037660e4ea01df4872d7.jpg"
+    e.exports =  "../dist/f11a05dd8ebf037660e4ea01df4872d7.jpg"
 }, function(e) {
     e.exports = JSON.parse('[{"id":1,"title":"1 Сайт школы онлайн образования","skills":"1 Html, Css, JavaScript","photo":"slider-1.jpg","link":"//google.com","desc":"1 Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"},{"id":2,"title":"2 Сайт школы онлайн образования","skills":"2 Html, Css, JavaScript","photo":"slider-2.jpg","link":"//yandex.ru","desc":"2 Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"},{"id":3,"title":"3 Сайт школы онлайн образования","skills":"3 Html, Css, JavaScript","photo":"slider-3.jpg","link":"//rambler.ru","desc":"3 Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"}]')
 }, function(e) {
